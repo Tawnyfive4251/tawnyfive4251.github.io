@@ -19,7 +19,12 @@ $(document).ready(function() {
   $("#holder").writeText("STUDENT AND SCIENCE ENTHUSIAST");
 
   // initialize wow.js
-  new WOW().init();
+  new WOW(
+    {
+mobile:       false,       // default
+live:         false        // default
+}
+  ).init();
 
   // Push the body and the nav over by 285px over
   var main = function() {
