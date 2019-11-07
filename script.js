@@ -12,15 +12,15 @@ $(document).ready(function() {
             }
         }, 100);
     };
-    
+
   })(jQuery);
 
-  // input text for typing animation 
+  // input text for typing animation
   $("#holder").writeText("STUDENT AND SCIENCE ENTHUSIAST");
 
   // initialize wow.js
   new WOW().init();
-    
+
   // Push the body and the nav over by 285px over
   var main = function() {
     $('.fa-bars').click(function() {
@@ -56,7 +56,7 @@ $(document).ready(function() {
   };
 
   $(document).ready(main);
-  
+
   // initiate full page scroll
 
   $('#fullpage').fullpage({
@@ -66,7 +66,7 @@ $(document).ready(function() {
     navigationTooltips: ['home', 'about', 'portfolio', 'contact', 'connect'],
     anchors: ['home', 'about', 'portfolio', 'contact', 'connect'],
     menu: '#myMenu',
-    fitToSection: false,
+    fitToSection: true,
 
     afterLoad: function ( anchorLink, index){
       var loadedSection = $(this);
@@ -103,7 +103,7 @@ $(document).ready(function() {
       }
     }
   });
- 
+
 
   // move section down one
   $(document).on('click', '#moveDown', function(){
@@ -195,7 +195,7 @@ var API = (function(window, document, undefined) {
 
   // Canvas vars
   var canvas = document.getElementById('canvas'),
-      
+
     ctx = canvas.getContext("2d"),
     cH, cW; // Canvas height / Canvas width
     document.body.style.background = "url(" + canvas.toDataURL() + ")";
