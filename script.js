@@ -18,6 +18,9 @@ $(document).ready(function() {
   // input text for typing animation
   $("#holder").writeText("STUDENT AND SCIENCE ENTHUSIAST");
 
+
+  if($(window).width() < 1000){ $('#fullpage').removeAttr('id'); }
+
   // initialize wow.js
   new WOW(
     {
